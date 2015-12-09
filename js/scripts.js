@@ -67,7 +67,17 @@ $(document).ready(function(){
                   var City = $('#City').val();
                   var State = $('#State').val();
                   var Comments = $('#Comments').val();
-                  var mTriggerInterest = $('#mTriggerInterest').val();
+                  var mTriggerInterest;
+                  
+                  /*for radio buttons*/
+                  if (document.getElementById('mTriggerInterest-0').checked) {
+                        mTriggerInterest = 1;
+                      }
+                      
+                  else if (document.getElementById('mTriggerInterest-0').checked) {
+                        mTriggerInterest=2;
+                  }
+                  
                   var submit = $('#submit').val();
                   var dataString = 'fName=' + fName + '&lName=' + lName + '&Email=' + Email + '&City=' + City + '&State=' + State + '&Comments=' + Comments + '&mTriggerInterest=' +mTriggerInterest + '&submit=' + submit;
                   $.ajax({

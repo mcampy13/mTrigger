@@ -200,8 +200,11 @@ html,body {
 #bannerImage{
    
    height:30em;
-   width:98%;
+   width:90%;
    margin:auto;
+   left:50%;
+   top:50%;
+   transform: translate(5%,-0%);
    padding:0px;
    -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -214,8 +217,6 @@ html,body {
 @media(max-width:50em){
     #bannerImage{
         height:15em;
-        width:94vw;
-        margin-left:-1.5em;
     }
 }
 

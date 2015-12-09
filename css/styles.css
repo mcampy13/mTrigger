@@ -48,6 +48,7 @@ body {
   margin: 0 auto -60px;
   padding: 0 0 160px;
   z-index: 0;
+  background:fixed no-repeat;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ec4040+0,db3b3b+41,2e2e2e+73 */
   background: #ec4040; /* Old browsers */
   background: -moz-linear-gradient(top,  #ec4040 0%, #db3b3b 41%, #2e2e2e 73%); /* FF3.6-15 */
