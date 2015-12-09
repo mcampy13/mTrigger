@@ -96,7 +96,38 @@ $(document).ready(function(){
                         $("input[type=submit]").prop("disabled", true);
                     }
                 }
+        
+      /*JS to  hide excess text*/    
+      $(function(){
+            var animspeed = 950; // animation speed in milliseconds
+           
+            var $blockquote = $('.excessText');
+            var height = $blockquote.height()+20;
+            var mini = $('.excessText p').eq(0).height() /*+ $('.excessText p').eq(1).height() + $('.excessText p').eq(2).height() + $('.excessText p').eq(2).height()*/;
+           
+            $blockquote.attr('data-fullheight',height+'px');
+            $blockquote.attr('data-miniheight',mini+'px');
+            $blockquote.css('height',mini+'px');
             
-
+            $('.expand').on('click', function(e){
+            $text = $(this).prev();
+         
+            $text.animate({
+              'height': $text.attr('data-fullheight')
+            }, animspeed);
+            $(this).next('.contract').removeClass('hide');
+            $(this).addClass('hide');
+            });
+         
+            $('.contract').on('click', function(e){
+            $text = $(this).prev().prev();
+         
+            $text.animate({
+              'height': $text.attr('data-miniheight')
+            }, animspeed);
+            $(this).prev('.expand').removeClass('hide');
+            $(this).addClass('hide');
+          });
+        });
       
 });
