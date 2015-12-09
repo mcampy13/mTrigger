@@ -1,0 +1,237 @@
+
+html,body {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -o-font-smoothing:antialiased;
+    -font-smoothing:antialiased;
+    -moz-font-smoothing:antialiased;
+    font: normal 16px;
+    font-family: "Futura", Futura, Futura-Medium, "Futura Medium",  "Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif !important;
+    
+}
+
+#page{
+    padding-top:9em;
+}
+
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+    background-color: rgb(249,249,249);
+}
+
+#nav {
+  width: 100vw;
+  position:fixed;
+  text-align: justify;
+  text-transform: uppercase;
+  font-size:14px;
+}
+
+.container{
+    width:100%;
+}
+
+.page-header{
+    font-size: 45px;
+    font-weight: bold;
+    padding-bottom: 50px;
+    margin-top:-20px;
+    text-transform: uppercase;
+}
+
+@media(max-width:500px){
+    .page-header{
+        font-size:40px;
+    }
+}
+
+@media (min-width: 767px) {
+  .navbar-nav.nav-justified > li{
+      float:none;
+  }
+}
+
+.navbar-nav {
+  margin: 1px 1px; 
+}
+
+#teamBio{
+    text-align:justify;
+    vertical-align: top;
+    display: inline-block;
+    padding-bottom:1em;
+    font-size:16px;
+}
+
+@media (max-width: 400px){
+        
+        #teamBio{
+            height:auto;
+        }
+    }
+}
+
+#head{
+    margin-top:-20px;
+}
+  
+/* customize nav style */
+#navbar_list {
+    background-color: #2e2e2e;
+	font-weight:700;
+    text-transform:uppercase;
+    border-width:0;
+   
+}
+#navbar_list  #navbar-nav>li>a {
+  color: #ddd;
+  margin-left:auto;
+  margin-right:-5px;
+  
+}
+
+/*highlights navbar element when hovered over*/
+#navbar_list  li>a:hover  {
+	background-color: #000;
+    color:red;
+}
+.navbar-custom .dropdown-menu{
+	right:0;
+}
+
+.navbar-custom  .navbar-nav>li>a {
+  color: #ddd;
+  margin-left:-5px;
+  margin-right:-5px;
+  
+}
+
+.navbar-custom .navbar-nav>.dropdown>a .caret {
+	border-top-color: #999;
+	border-bottom-color: #999;
+}
+
+.navbar-collapse.in { /*3.0.2 bug workaround*/
+    overflow-y: visible;
+}
+
+.navbar-toggle {
+	outline:0;
+}
+
+.divider {
+	height:20px;
+}
+
+.panel {
+	border-width:0;
+}
+
+
+.navbar-brand { 
+    max-height: 40px; 
+    overflow: visible;
+    padding-top: 10px;
+    vertical-align: middle;
+    position:relative;
+    display:inline-block;
+}
+
+#navbarLogo{
+  max-height:50px;
+  max-width:50px;
+  margin-left:auto;
+  margin-right:auto;
+  
+}
+
+#navbar_list{
+  margin-left:auto;
+  margin-right:-80px;
+}
+
+.spacer{
+    margin-top:20px;
+    margin-bottom:20px;
+    width:100%;
+    display:inline-block;
+    position:static;
+    
+}
+
+.linked{
+    width:1.5em;
+    height:1.5em;
+    margin-left:1em;
+    padding:0px;
+    display: inline;
+}
+
+.img-center {
+    float: right;
+    max-height: 200px;
+    max-width: 250px;
+    padding:1px;
+    margin:1em;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);  
+    display: inline-block;
+}
+
+.teamContent{
+    margin:auto;
+    padding:5px;
+    text-align: left;
+    display: inline-block;
+    height:100%;
+}
+
+.name{
+    color:red;
+    padding:0px;
+    margin:0px;
+}
+
+
+#bannerImage{
+   
+   height:30em;
+   width:98%;
+   margin:auto;
+   padding:0px;
+   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+   box-sizing: border-box;
+   -webkit-box-shadow: 5px 5px 5px #111;
+   box-shadow: 5px 5px 5px #111;     
+}
+
+@media(max-width:50em){
+    #bannerImage{
+        height:15em;
+        width:94vw;
+        margin-left:-1.5em;
+    }
+}
+
+.footer{
+   
+    background-color:#2e2e2e;
+    color:#ec4040;
+    width:100vw;
+    text-align:center;
+    height: 60px;
+    margin-top:50px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+footer {
+    margin-bottom: -50px;
+     margin-top:50px;
+}
