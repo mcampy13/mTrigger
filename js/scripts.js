@@ -67,23 +67,14 @@ $(document).ready(function(){
                   var City = $('#City').val();
                   var State = $('#State').val();
                   var Comments = $('#Comments').val();
-                  var mTriggerInterest;
-                  
-                  /*for radio buttons*/
-                  if (document.getElementById('mTriggerInterest-0').checked) {
-                        mTriggerInterest = 1;
-                      }
-                      
-                  else if (document.getElementById('mTriggerInterest-0').checked) {
-                        mTriggerInterest=2;
-                  }
-                  
+                  var mTriggerInterest=document.querySelector('input[name="mTriggerInterest"]:checked').value;
                   var submit = $('#submit').val();
                   var dataString = 'fName=' + fName + '&lName=' + lName + '&Email=' + Email + '&City=' + City + '&State=' + State + '&Comments=' + Comments + '&mTriggerInterest=' +mTriggerInterest + '&submit=' + submit;
                   $.ajax({
                       type: "POST",
                       url: "emailForm.php",
                       data: dataString,
+                      success:alert("Form Sent"),
                       
                   });
             });
