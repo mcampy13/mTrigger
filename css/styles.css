@@ -7,6 +7,7 @@ body {
   -o-font-smoothing:antialiased;
   -font-smoothing:antialiased;
   -moz-font-smoothing:antialiased;
+  -font-smoothing:antialiased;
   font-size:16px;
   font-weight: 500;
   font-family: "Futura", Futura, Futura-Medium, "Futura Medium",  "Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif !important;
@@ -154,6 +155,7 @@ body {
   margin-top:10px;
   margin-left:8em
 }
+
 
 /* styles for mTrigger main name in header*/
 #heading{
@@ -402,11 +404,12 @@ h1 {
 #users{
   vertical-align: middle;
   text-align:center;
-  color:#ec4040;
+  color:#2e2e2e;
   margin-bottom:-.1em;
   margin-left:1em;
   font-size:18px;
     font-style: normal;
+  font-weight: bold;
 }
 
 #benefits{
@@ -414,6 +417,7 @@ h1 {
   vertical-align: middle;
   margin-left:-1em;
   font-size: 16px;
+  font-weight: 800;
 }
 
 #infoImages{
@@ -548,6 +552,7 @@ h1 {
 #contentTitle{
   margin-top:20px;
   font-weight: bold;
+  font-size:24px;
 }
 
 #contactInfo{
