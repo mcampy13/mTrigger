@@ -35,7 +35,7 @@
                     
                     //Send email to info@mymtrigger.com after form is submitted
                       
-                    $to= "admin@mymtrigger.com";
+                    $to= "info@mymtrigger.com";
               
                   // Your subject
               
@@ -69,7 +69,7 @@
                     if($mTriggerInterest == 1){
                         $message.="Add To Mailing List?: Yes \r\n";
                         
-                        //Send message to new sign-up
+                        //Send message to new sign-upee
                         
                             $to2= "$Email";
                   
